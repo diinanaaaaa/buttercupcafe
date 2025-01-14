@@ -1,0 +1,427 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Garamond', serif; /* Ensure you have a fallback font */
+  background-color: #53452e; /* Background color fallback */
+  color: #f5f3e5; /* Light beige color for text */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2); /* Reduced shadow for a lighter feel */
+  background-image: url('bg.png'); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  min-height: 100vh; /* Ensures full height for every page */
+  display: flex;
+  flex-direction: column; /* Helps content fill the page vertically */
+}
+
+/* Header Section Styles */
+.header {
+  background-color: #3d2b1f; /* Dark chocolate for header */
+  color: #f5f3e5; /* Light beige text for contrast */
+  text-align: center;
+  padding: 20px 15px; /* Reduced padding */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+  text-transform: uppercase;
+  letter-spacing: 0.8px; /* Reduced letter spacing */
+}
+
+.header h1 {
+  font-size: 2.5em; /* Smaller font size */
+  margin: 0;
+}
+
+.header span {
+  font-weight: bold;
+  color: #7a5d44; /* Accent color for dot */
+}
+
+.header p {
+  font-size: 1em; /* Smaller font size */
+  font-weight: lighter;
+  margin-top: 8px; /* Reduced margin */
+}
+
+/* Navigation Section Styles */
+.nav {
+  background-color: #f9f5e8; /* Light beige background for nav */
+  color: #3e2b1f; /* Dark chocolate text */
+  padding: 12px 20px; /* Reduced padding for compactness */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+  text-align: center; /* Center the content */
+}
+
+.nav-container {
+  display: flex;
+  align-items: center; /* Align items (logo and links) vertically */
+  justify-content: center; /* Center content horizontally */
+  max-width: 1200px; /* Limit the width for better alignment */
+  margin: 0 auto; /* Center the nav-container */
+}
+
+.nav-logo-link {
+  margin-right: 30px; /* Space between the logo and links */
+}
+
+.nav-logo {
+  width: 50px; /* Adjust the logo size */
+  height: 50px;
+  cursor: pointer; /* Make the logo clickable */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Space between navigation links */
+}
+
+.nav a {
+  color: #3e2b1f; /* Dark chocolate links */
+  text-decoration: none;
+  padding: 10px 20px; /* Padding for better click area */
+  font-size: 16px; /* Font size for the links */
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav a:hover {
+  background-color: #7a5d44; /* Medium brown on hover */
+  color: #f5f3e5; /* Light beige text */
+}
+
+.nav a:active {
+  background-color: #5e4a32; /* Darker brown on click */
+}
+
+
+.body {
+  padding-top: 10px; /* Optional padding for the body content */
+}
+
+/* Body Section Styles */
+.body {
+  color: #f5f3e5; /* Light beige text */
+  text-align: center;
+  padding: 15px 50px; /* Reduced padding */
+  background-color: #53452e; /* Updated background */
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3); /* Inner shadow for the body */
+  flex: 1; /* Ensures that the body content stretches to fill available space */
+}
+
+.body h2 {
+  font-size: 1.6em; /* Smaller font size */
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+.body p {
+  margin-top: 8px; /* Reduced margin */
+  font-size: 1.2em; /* Smaller font size */
+  font-weight: lighter;
+}
+/*unordered list about us*/
+ul{
+    text-align: center;
+    list-style-position: inside;
+	
+}
+
+li{
+    font-size: 1.3rem;
+}
+
+/* Order Now Button Styling */
+.order-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; 
+  width: 200%; 
+  height: 100%; 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+  transition: all 0.5s ease-in-out;
+}
+
+.order-button:hover::before {
+  left: 100%;
+}
+
+.order-button:hover {
+  background: linear-gradient(90deg, #FFC300, #FFD700);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-3px);
+}
+
+.order-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Section Styles */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns per row */
+  gap: 20px; /* Reduced gap */
+  padding: 20px; /* Reduced padding */
+}
+
+/* Menu Category Box Styles */
+.menu-category {
+  background: #53452e; /* Muted brown for each category */
+  color: #f5f3e5; /* Light beige text */
+  border-radius: 12px; /* Slightly smaller border radius */
+  padding: 20px; /* Reduced padding */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-category:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+}
+
+.menu-category img {
+  width: 100%;
+  height: 160px; /* Reduced image height */
+  object-fit: cover;
+  border-radius: 10px; /* Reduced border radius */
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+.menu-category h3 {
+  color: #f5f3e5; /* Light beige for category name */
+  font-size: 1.6em; /* Smaller font size */
+  margin-bottom: 10px; /* Reduced margin */
+  text-transform: uppercase;
+}
+
+.menu-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0; /* Reduced margin */
+  font-size: 1.1em; /* Smaller font size */
+  width: 100%;
+  color: #f5f3e5; /* Light beige text color */
+}
+
+.menu-item span {
+  font-weight: bold;
+  color: #f5f3e5; /* Medium brown for price */
+  text-align: right;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Back to Top Button */
+.jump-to-top {
+  display: inline-block;
+  padding: 10px 20px; /* Reduced padding */
+  background-color: #7a5d44; /* Medium brown for button */
+  color: #f5f3e5; /* Light text */
+  font-size: 1rem; /* Smaller font size */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px; /* Slightly smaller border radius */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+  transition: all 0.3s ease;
+  margin-top: 15px; /* Reduced margin */
+}
+
+.jump-to-top:hover {
+  background-color: #5e4a32;
+  transform: scale(1.05);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.jump-to-top:active {
+  background-color: #3e2b1f;
+  transform: scale(0.95);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* QR Code Styling */
+.qr-code {
+  max-width: 200px; /* Set a max width to ensure it's responsive */
+  margin-top: 20px; /* Add some spacing above */
+}
+
+/* Contact Form Styling */
+.contact-form {
+  background-color: #f9f5e8; /* Light beige background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Limit width for better alignment */
+  margin: 20px auto; /* Center the form */
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #3e2b1f; /* Dark chocolate color */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f5f3e5; /* Light beige background for inputs */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #7a5d44; /* Accent color for focus state */
+  outline: none;
+}
+
+/* Submit Button Styling */
+.submit-button {
+  background-color: #7a5d44; /* Medium brown background */
+  color: #f5f3e5; /* Light beige text */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #5e4a32; /* Darker brown on hover */
+  transform: translateY(-3px);
+}
+
+.submit-button:active {
+  background-color: #3e2b1f; /* Dark chocolate on click */
+  transform: translateY(1px);
+}
+
+/* Footer Section Styles */
+footer {
+  background-color: #3d2b1f; /* Dark chocolate footer */
+  color: #f5f3e5; /* Light beige text */
+  text-align: center; /* Center the content */
+  padding: 30px 15px; /* Reduced padding */
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+  font-size: 1em; /* Smaller font size */
+}
+
+footer .footer-content {
+  max-width: 1000px; /* Reduced width */
+  margin: 0 auto; /* Center align the footer content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+footer .footer-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-logo img {
+  width: 40px; /* Smaller logo */
+  height: 40px;
+  margin-right: 10px;
+}
+
+footer .footer-logo span {
+  font-size: 1.4em; /* Smaller font size */
+  font-weight: bold;
+  color: #f5f3e5;
+  letter-spacing: 0.8px; /* Reduced letter spacing */
+}
+
+footer .footer-links {
+  flex: 2;
+  text-align: right;
+}
+
+footer .footer-links a {
+  color: #f5f3e5; /* Light beige text */
+  font-size: 1rem; /* Smaller font size */
+  text-decoration: none;
+  padding: 8px 12px; /* Reduced padding */
+  transition: all 0.3s ease;
+  font-weight: 500; /* Lighter font weight */
+}
+
+footer .footer-links a:hover {
+  color: #7a5d44; /* Accent color on hover */
+  text-decoration: underline;
+}
+
+footer .footer-socials {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer .footer-socials img {
+  width: 25px; /* Smaller social icons */
+  height: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+footer .footer-socials img:hover {
+  transform: scale(1.05); /* Slight scaling on hover */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Smaller shadow on hover */
+}
+
+footer .footer-bottom {
+  text-align: center;
+  margin-top: 5px; /* Reduced margin */
+  font-size: 0.9rem; /* Smaller font size */
+  color: #b2a897; /* Lighter beige for footer bottom text */
+}
+
+footer .footer-bottom p {
+  margin: 0;
+  font-weight: lighter;
+}
+
+/*unordered list about us*/
+ul{
+    text-align: center;
+    list-style-position: inside;
+	
+}
+
+li{
+    font-size: 1.3rem;
+}
+
+/*slideshow*/
+.mySlides {display:none;}
+
+body
+.sticker {
+    width: 150px;
+    height:150px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  
+  70% {transform: rotate(400deg);}
+  100% { left:0px; top:0px;}
+}

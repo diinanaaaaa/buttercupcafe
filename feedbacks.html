@@ -1,0 +1,186 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttercup Café</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.jpg" type="image/jpg" sizes="16x16"> <!-- Favicon -->
+  <link rel="stylesheet" href="hover.css" type="text/css"> <!-- Hover Effects CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!--star-->
+
+  
+</head>
+<body>
+
+<table>
+<tr>
+  <!-- Header -->
+  <td colspan="3" class="header">
+    <h1>Buttercup Café<span>.</span></h1>
+    <p>Your Daily Pitstop</p>
+  </td>
+</tr>
+
+<tr>
+  <!-- Navigation -->
+  <td colspan="3" class="nav">
+    <div class="nav-container">
+      <!-- Logo with Home Link -->
+      <a href="index.html" class="nav-logo-link">
+        <img src="logo-2.jpg" width="50" height="50" alt="logo" class="nav-logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="feedbacks.html">Feedbacks</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </td>
+</tr>
+</table>
+
+<table style="width: 100%; max-width: 600px; margin: 30px auto 0; border: 1px solid #ddd; border-radius: 8px; background-color: #321414; padding: 20px;">
+  <!-- Form Header -->
+  <tr>
+    <td colspan="2" style="text-align: center; padding: 20px 0; color: #f5f3e5;">
+      <h2>Tell Us What You Think</h2>
+    </td>
+  </tr>
+
+  <!-- Name Input -->
+  <form action="mailto:aimiumirh@gmail.com" method="POST" enctype="text/plain">
+  <tr>
+    <td style="padding: 10px; text-align: right; vertical-align: middle; color: #f5f3e5;">Name:</td>
+    <td style="padding: 10px;">
+      <input 
+        type="text" 
+        name="name"
+        placeholder="Enter your name" 
+        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+    </td>
+  </tr>
+
+  <!-- Email Input -->
+  <tr>
+    <td style="padding: 10px; text-align: right; vertical-align: middle; color: #f5f3e5;">Email:</td>
+    <td style="padding: 10px;">
+      <input 
+        type="email" 
+        name="email"
+        placeholder="Enter your email" 
+        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+    </td>
+  </tr>
+
+  <!-- Comment Input -->
+  <tr>
+    <td style="padding: 10px; text-align: right; vertical-align: top; color: #f5f3e5;">Comment:</td>
+    <td style="padding: 10px;">
+      <textarea 
+        name="comment"
+        placeholder="Tell us what you think" 
+        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; height: 100px;"></textarea>
+    </td>
+  </tr>
+
+  <!-- Rating -->
+  <tr>
+    <td style="padding: 10px; text-align: right; vertical-align: middle; color: #f5f3e5;">Rating:</td>
+    <td style="padding: 10px; text-align: center;">
+      <div id="star-rating" style="font-size: 1.5rem; color: #FFD700;">
+        <i class="fa fa-star" data-value="1"></i>
+        <i class="fa fa-star" data-value="2"></i>
+        <i class="fa fa-star" data-value="3"></i>
+        <i class="fa fa-star" data-value="4"></i>
+        <i class="fa fa-star" data-value="5"></i>
+      </div>
+    </td>
+  </tr>
+
+  <!-- Submit Button -->
+  <tr>
+    <td colspan="2" style="text-align: center; padding: 20px;">
+      <input 
+        type="submit" 
+        value="Submit" 
+        style="padding: 10px 20px; background-color: #7a5d44; color: white; border: none; border-radius: 4px; cursor: pointer;">
+    </td>
+  </tr>
+  </form>
+</table>
+
+
+
+  <!-- Back to Top Link -->
+	<tr>
+		<td colspan="3" class="body">
+			<p align="center">
+				<a href="#top" class="jump-to-top">Back to Top</a>
+			</p>
+		</td>
+	</tr>
+
+</table>
+
+<!-- Footer Section -->
+<footer>
+  <table>
+    <tr>
+      <!-- Left Footer Content -->
+      <td style="width: 20%; color:#f5f3e5;">
+        <p>&copy; 2025 | Design by Buttercup Café. All rights reserved</p>
+        <p><a href="mailto:nurdiyanahnabila@gmail.com">Email me</a></p>
+      </td>
+
+      <!-- Social Media Links -->
+      <td style="width: 20%; text-align: right;">
+        <a href="https://www.instagram.com/buttercup.cafeofficial?igsh=bWlqcmNtY2ZqMThw" target="_blank">
+          <img src="insta.jpeg" alt="Instagram" width="50" height="50" >
+        </a>
+      </td>
+    </tr>
+  </table>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const stars = document.querySelectorAll("#star-rating .fa-star");
+
+    // Highlight stars based on hover
+    stars.forEach((star, index) => {
+      star.addEventListener("mouseover", () => {
+        resetStars();
+        for (let i = 0; i <= index; i++) {
+          stars[i].classList.add("active");
+        }
+      });
+
+      star.addEventListener("mouseout", resetStars);
+
+      // Set the rating on click
+      star.addEventListener("click", () => {
+        resetStars();
+        for (let i = 0; i <= index; i++) {
+          stars[i].classList.add("selected");
+        }
+        alert(`You selected ${index + 1} stars!`);
+      });
+    });
+
+    // Reset stars to show the selected state
+    function resetStars() {
+      stars.forEach((star) => {
+        star.classList.remove("active");
+        star.classList.remove("selected");
+      });
+      const selectedStars = document.querySelectorAll("#star-rating .fa-star.selected");
+      selectedStars.forEach((star) => {
+        star.classList.add("active");
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

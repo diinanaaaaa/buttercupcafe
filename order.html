@@ -1,0 +1,250 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttercup Café</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="icon" href="logo.jpg" type="image/jpg" sizes="16x16"> <!-- Favicon -->
+  <link rel="stylesheet" href="hover.css" type="text/css"> <!-- Hover Effects CSS -->
+  
+</head>
+<body>
+
+<table>
+<tr>
+  <!-- Header -->
+  <td colspan="3" class="header">
+    <h1>Buttercup Café<span>.</span></h1>
+    <p>Your Daily Pitstop</p>
+  </td>
+</tr>
+
+<tr>
+  <!-- Navigation -->
+  <td colspan="3" class="nav">
+    <div class="nav-container">
+      <!-- Logo with Home Link -->
+      <a href="index.html" class="nav-logo-link">
+        <img src="logo-2.jpg" width="50" height="50" alt="logo" class="nav-logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="feedbacks.html">Feedbacks</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </td>
+</tr>
+
+
+<tr>
+  <!-- Body -->
+  <td colspan="3" class="body">
+    <!-- Student-Friendly Menu -->
+    <div class="menu-section">
+      <h3>Buttercup Café Student-Friendly Menu</h3>
+      <p><i>Affordable bites and drinks for students! Just show your student ID.</i></p>
+      
+     <table width="800" align="center">
+<tr>
+<td border="1">
+    <div class="menu">
+        <div class="menu-section">
+            <h2>Coffee & Espresso</h2>
+            <ol>
+                <li><span>Espresso</span> <span align="center" class="price">RM3.00</span> <button class="add-to-cart" onclick="addToCart('Espresso', 3)">Add to Cart</button></li>
+                <li><span>Americano</span> <span class="price">RM4.00</span> <button class="add-to-cart" onclick="addToCart('Americano', 4)"><font align="center">Add to Cart</font></button></li>
+                <li><span>Cappuccino</span> <span class="price">RM5.00</span> <button class="add-to-cart" onclick="addToCart('Cappuccino', 5)">Add to Cart</button></li>
+                <li><span>Latte</span> <span class="price">RM6.00</span> <button class="add-to-cart" onclick="addToCart('Latte', 6)">Add to Cart</button></li>
+                <li><span>Mocha</span> <span class="price">RM7.00</span> <button class="add-to-cart" onclick="addToCart('Mocha', 7)">Add to Cart</button></li>
+            </ol>
+        </div>
+		</td>
+		</tr>
+		
+		
+		
+		<tr>
+		<td border="1">
+		 <div class="menu">
+        <div class="menu-section">
+            <h2>Tea & Refreshments</h2>
+            <ol>
+                <li><span>English Breakfast Tea</span> <span class="price">RM4.00</span> <button class="add-to-cart" onclick="addToCart('English Breakfast Tea', 4)">Add to Cart</button></li>
+                <li><span>Green Tea</span> <span class="price">RM4.00</span> <button class="add-to-cart" onclick="addToCart('Green Tea', 4)">Add to Cart</button></li>
+                <li><span>Iced Lemon Tea</span> <span class="price">RM5.00</span> <button class="add-to-cart" onclick="addToCart('Iced Lemon Tea', 5)">Add to Cart</button></li>
+                <li><span>Hot Chocolate</span> <span class="price">RM6.00</span> <button class="add-to-cart" onclick="addToCart('Hot Chocolate', 6)">Add to Cart</button></li>
+            </ol>
+        </div>
+		</td>
+		</tr>
+
+	     <tr>
+		<td border="1">
+		 <div class="menu">
+        <div class="menu-section">
+            <h2>Smoothie</h2>
+            <ol>
+                <li><span>Watermelon </span> <span class="price">RM7.00</span> <button class="add-to-cart" onclick="addToCart('Watermelon', 7)">Add to Cart</button></li>
+                <li><span>Strawberry</span> <span class="price">RM7.00</span> <button class="add-to-cart" onclick="addToCart('Strawberry', 7)">Add to Cart</button></li>
+                <li><span>Yogurt</span> <span class="price">RM8.00</span> <button class="add-to-cart" onclick="addToCart('Yogurt', 8)">Add to Cart</button></li>
+                <li><span>Mango</span> <span class="price">RM8.00</span> <button class="add-to-cart" onclick="addToCart('Mango', 8)">Add to Cart</button></li>
+            </ol>
+        </div>
+		</td>
+		</tr>
+
+	     <tr>
+		<td border="1">
+		 <div class="menu">
+        <div class="menu-section">
+            <h2> Main Course </h2>
+            <ol>
+                <li><span>Pasta Carbonara</span> <span class="price">RM13.00</span> <button class="add-to-cart" onclick="addToCart('Pasta Carbonara', 13)">Add to Cart</button></li>
+                <li><span>Pasta Bolognese</span> <span class="price">RM12.00</span> <button class="add-to-cart" onclick="addToCart('Pasta Bolognese', 12)">Add to Cart</button></li>
+                <li><span>Mac & Cheese</span> <span class="price">RM13.00</span> <button class="add-to-cart" onclick="addToCart('Mac & Cheese', 13)">Add to Cart</button></li>
+                <li><span>Burger</span> <span class="price">RM10.00</span> <button class="add-to-cart" onclick="addToCart('Burger', 10)">Add to Cart</button></li>
+		<li><span>Wrap Chicken</span> <span class="price">RM11.00</span> <button class="add-to-cart" onclick="addToCart('Wrap Chicken', 11)">Add to Cart</button></li>
+            </ol>
+        </div>
+		</td>
+		</tr>
+		
+		<tr>
+		<td border="1">
+		 <div class="menu">
+        <div class="menu-section">
+            <h2>Student Specials</h2>
+            <ol>
+                <li><span>ButterCup Cold Brew</span> <span class="price">RM6.00</span> <button class="add-to-cart" onclick="addToCart('ButterCup Cold Brew', 6)">Add to Cart</button></li>
+                <li><span>Honeycomb Latte</span> <span class="price">RM8.00</span> <button class="add-to-cart" onclick="addToCart('Honeycomb Latte', 8)">Add to Cart</button></li>
+                <li><span>Signature Affogato</span> <span class="price">RM9.00</span> <button class="add-to-cart" onclick="addToCart('Signature Affogato', 9)">Add to Cart</button></li>
+            </ol>
+        </div>
+    </div>
+	</td>
+	</tr>
+	     <tr>
+		<td border="1">
+		 <div class="menu">
+        <div class="menu-section">
+            <h2> Dessert </h2>
+            <ol>
+                <li><span>Tart</span> <span class="price">RM6.00</span> <button class="add-to-cart" onclick="addToCart('Tart', 6)">Add to Cart</button></li>
+                <li><span>Muffin</span> <span class="price">RM5.00</span> <button class="add-to-cart" onclick="addToCart('Muffin', 5)">Add to Cart</button></li>
+                <li><span>Cromboloni</span> <span class="price">RM8.00</span> <button class="add-to-cart" onclick="addToCart('Cromboloni', 8)">Add to Cart</button></li>
+                <li><span>Waffle</span> <span class="price">RM4.00</span> <button class="add-to-cart" onclick="addToCart('Waffle', 4)">Add to Cart</button></li>
+		<li><span>Cake</span> <span class="price">RM9.00</span> <button class="add-to-cart" onclick="addToCart('Cake', 9)">Add to Cart</button></li>
+            </ol>
+        </div>
+		</td>
+		</tr>
+	
+	</table>
+
+    <table width="800" align="center">
+    <tr>
+    <td>
+    <div class="cart">
+        <h2>Order Cart</h2>
+        <p id="cart-items" class="cart-items">
+            <!-- Items will be dynamically added here -->
+        </p>
+        <p id="total-price"><font color="#fff">Total: RM0.00</font></p>
+        <div class="checkout">
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+	</td>
+	</tr>
+	</table>
+	
+	 <!-- Back to Top Link -->
+	<tr>
+		<td colspan="3" class="body">
+			<p align="center">
+				<a href="#top" class="jump-to-top">Back to Top</a>
+			</p>
+		</td>
+	</tr>
+	
+</table>
+
+<!-- Footer Section -->
+<footer>
+  <table>
+    <tr>
+      <!-- Left Footer Content -->
+      <td style="width: 20%; color:#f5f3e5;">
+        <p>&copy; 2025 | Design by Buttercup Café. All rights reserved</p>
+        <p><a href="mailto:nurdiyanahnabila@gmail.com">Email me</a></p>
+      </td>
+
+      <!-- Social Media Links -->
+      <td style="width: 20%; text-align: right;">
+        <a href="https://www.instagram.com/buttercup.cafeofficial?igsh=bWlqcmNtY2ZqMThw" target="_blank">
+          <img src="insta.jpeg" alt="Instagram" width="50" height="50" >
+        </a>
+      </td>
+    </tr>
+  </table>
+</footer>
+	
+	 <script>
+        let cart = [];
+
+        function addToCart(item, price) {
+            cart.push({ item, price });
+            updateCart();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartList = document.getElementById('cart-items');
+            const totalPriceEl = document.getElementById('total-price');
+            cartList.innerHTML = '';
+
+            let total = 0;
+            cart.forEach(({ item, price }, index) => {
+                const listItem = document.createElement('li');
+                const itemText = document.createElement('span');
+                itemText.textContent = `${item} - RM${price}`;
+
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.className = 'remove-from-cart';
+                removeButton.onclick = () => removeFromCart(index);
+
+                listItem.appendChild(itemText);
+                listItem.appendChild(removeButton);
+                cartList.appendChild(listItem);
+
+                total += price;
+            });
+
+            totalPriceEl.textContent = `Total: RM${total.toFixed(2)}`;
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert('Your cart is empty. Please add items to your cart before checking out.');
+                return;
+            }
+
+            const paymentMethod = prompt('Enter your payment method (Cash / Credit / E-wallet):');
+            if (paymentMethod) {
+                alert(`Thank you for your purchase! You chose to pay with ${paymentMethod}.`);
+                cart = [];
+                updateCart();
+            }
+        }
+    </script>
+
+</body>
+</html>
