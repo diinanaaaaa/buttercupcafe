@@ -1,135 +1,144 @@
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buttercup Café</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="logo.jpg" type="image/jpg" sizes="16x16"> <!-- Favicon -->
-  <link rel="stylesheet" href="hover.css" type="text/css"> <!-- Hover Effects CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!--star-->
 
-  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttercup Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg" type="image/jpg" sizes="16x16"> <!-- Favicon -->
+    <link rel="stylesheet" href="hover.css" type="text/css"> <!-- Hover Effects CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Star Rating -->
 </head>
+
 <body>
 
-<table>
-<tr>
-  <!-- Header -->
-  <td colspan="3" class="header">
-    <h1>Buttercup Café<span>.</span></h1>
-    <p>Your Daily Pitstop</p>
-  </td>
-</tr>
+    <!-- Header and Navigation -->
+    <table>
+        <tr>
+            <td colspan="3" class="header">
+                <h1>Buttercup Café<span>.</span></h1>
+                <p>Your Daily Pitstop</p>
+            </td>
+        </tr>
 
-<tr>
-  <!-- Navigation -->
-  <td colspan="3" class="nav">
-    <div class="nav-container">
-      <!-- Logo with Home Link -->
-      <a href="index.html" class="nav-logo-link">
-        <img src="logo-2.jpg" width="50" height="50" alt="logo" class="nav-logo">
-      </a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="feedbacks.html">Feedbacks</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
-  </td>
-</tr>
-</table>
+        <tr>
+            <td colspan="3" class="nav">
+                <div class="nav-container">
+                    <a href="index.html" class="nav-logo-link">
+                        <img src="logo-2.jpg" width="50" height="50" alt="logo" class="nav-logo">
+                    </a>
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="feedbacks.html">Feedbacks</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
 
-<table style="width: 100%; max-width: 600px; margin: 30px auto 0; border: 1px solid #ddd; border-radius: 8px; background-color: #321414; padding: 20px;">
-  <!-- Form Header -->
-  <tr>
-    <td colspan="2" style="text-align: center; padding: 20px 0; color: #f5f3e5;">
-      <h2>Tell Us What You Think</h2>
-    </td>
-  </tr>
+    <!-- Feedback Form -->
+    <table style="width: 100%; max-width: 600px; margin: 30px auto 0; border: 1px solid #ddd; border-radius: 8px; background-color: #321414; padding: 20px;">
+        <tr>
+            <td colspan="2" style="text-align: center; padding: 20px 0; color: #f5f3e5;">
+                <h2>Tell Us What You Think</h2>
+            </td>
+        </tr>
 
-  <!-- Name Input -->
-  <form action="mailto:aimiumirh@gmail.com" method="POST" enctype="text/plain">
-  <tr>
-    <td style="padding: 10px; text-align: right; vertical-align: middle; color: #f5f3e5;">Name:</td>
-    <td style="padding: 10px;">
-      <input 
-        type="text" 
-        name="name"
-        placeholder="Enter your name" 
-        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
-    </td>
-  </tr>
+        <form id="feedbackForm">
+            <!-- Name Input -->
+            <tr>
+                <td style="padding: 10px; text-align: right; vertical-align: middle; color: #f5f3e5;">Name:</td>
+                <td style="padding: 10px;">
+                    <input type="text" id="name" placeholder="Enter your name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </td>
+            </tr>
 
-  <!-- Email Input -->
-  <tr>
-    <td style="padding: 10px; text-align: right; vertical-align: middle; color: #f5f3e5;">Email:</td>
-    <td style="padding: 10px;">
-      <input 
-        type="email" 
-        name="email"
-        placeholder="Enter your email" 
-        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
-    </td>
-  </tr>
+            <!-- Email Input -->
+            <tr>
+                <td style="padding: 10px; text-align: right; vertical-align: middle; color: #f5f3e5;">Email:</td>
+                <td style="padding: 10px;">
+                    <input type="email" id="email" placeholder="Enter your email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </td>
+            </tr>
 
-  <!-- Comment Input -->
-  <tr>
-    <td style="padding: 10px; text-align: right; vertical-align: top; color: #f5f3e5;">Comment:</td>
-    <td style="padding: 10px;">
-      <textarea 
-        name="comment"
-        placeholder="Tell us what you think" 
-        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; height: 100px;"></textarea>
-    </td>
-  </tr>
+            <!-- Comment Input -->
+            <tr>
+                <td style="padding: 10px; text-align: right; vertical-align: top; color: #f5f3e5;">Comment:</td>
+                <td style="padding: 10px;">
+                    <textarea id="comment" placeholder="Tell us what you think" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; height: 100px;"></textarea>
+                </td>
+            </tr>
 
-  <!-- Rating -->
-  <tr>
-    <td style="padding: 10px; text-align: right; vertical-align: middle; color: #f5f3e5;">Rating:</td>
-    <td style="padding: 10px; text-align: center;">
-      <div id="star-rating" style="font-size: 1.5rem; color: #FFD700;">
-        <i class="fa fa-star" data-value="1"></i>
-        <i class="fa fa-star" data-value="2"></i>
-        <i class="fa fa-star" data-value="3"></i>
-        <i class="fa fa-star" data-value="4"></i>
-        <i class="fa fa-star" data-value="5"></i>
-      </div>
-    </td>
-  </tr>
+            <!-- Rating -->
+            <tr>
+                <td style="padding: 10px; text-align: right; vertical-align: middle; color: #f5f3e5;">Rating:</td>
+                <td style="padding: 10px; text-align: center;">
+                    <div id="star-rating" style="font-size: 1.5rem; color: #FFD700;">
+                        <i class="fa fa-star" data-value="1"></i>
+                        <i class="fa fa-star" data-value="2"></i>
+                        <i class="fa fa-star" data-value="3"></i>
+                        <i class="fa fa-star" data-value="4"></i>
+                        <i class="fa fa-star" data-value="5"></i>
+                    </div>
+                </td>
+            </tr>
 
-  <!-- Submit Button -->
-  <tr>
-    <td colspan="2" style="text-align: center; padding: 20px;">
-      <input 
-        type="submit" 
-        value="Submit" 
-        style="padding: 10px 20px; background-color: #7a5d44; color: white; border: none; border-radius: 4px; cursor: pointer;">
-    </td>
-  </tr>
-  </form>
-</table>
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" style="text-align: center; padding: 20px;">
+                    <input type="submit" value="Submit" style="padding: 10px 20px; background-color: #7a5d44; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                </td>
+            </tr>
+        </form>
 
+        <!-- Customer Feedback Section -->
+        <section id="feedbacks" style="padding: 20px; background-color: #f5f3e5; margin-top: 30px; border-radius: 8px; background-color: rgba(83, 68, 46, 0.5);">
+            <h2 style="font-size: 24px; text-align: center; color: white;">Customer Feedbacks</h2>
 
+            <!-- Feedback Table -->
+            <table id="feedbackTable" style="width: 100%; margin-top: 20px; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="background-color: #53452e; color: #f5f3e5; padding: 10px; text-align: left;">Name</th>
+                        <th style="background-color: #53452e; color: #f5f3e5; padding: 10px; text-align: left;">Comment</th>
+                        <th style="background-color: #53452e; color: #f5f3e5; padding: 10px; text-align: left;">Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Feedback entries will be inserted here dynamically -->
 
-  <!-- Back to Top Link -->
-	<tr>
-		<td colspan="3" class="body">
-			<p align="center">
-				<a href="#top" class="jump-to-top">Back to Top</a>
-			</p>
-		</td>
-	</tr>
+                    <!-- Example Feedbacks -->
+                    <tr style="background-color: #321414; color: #f5f3e5;">
+                        <td style="padding: 10px;">Rania</td>
+                        <td style="padding: 10px;">"Great place to relax with a cup of coffee. Will definitely come back!"</td>
+                        <td style="padding: 10px;">★★★★★</td>
+                    </tr>
+                    <tr style="background-color: #321414; color: #f5f3e5;">
+                        <td style="padding: 10px;">Ahmad Kasim</td>
+                        <td style="padding: 10px;">"Kenapa tempat ni underrated? Will spread it on my tiktok!"</td>
+                        <td style="padding: 10px;">★★★★</td>
+                    </tr>
+                    <tr style="background-color: #321414; color: #f5f3e5;">
+                        <td style="padding: 10px;">Kamsiah Abu</td>
+                        <td style="padding: 10px;">"Having a nice time finding ideas for my upcoming novels while enjoying some nice desserts and smoothies"</td>
+                        <td style="padding: 10px;">★★★★</td>
+                    </tr>
+					
+                </tbody>
+            </table>
 
-</table>
+        </section>
+    </table>
 
-<!-- Footer Section -->
-<footer>
+		<!-- Footer Section -->
+<footer style="padding: 10px 0; margin-top: 20px;">
   <table>
     <tr>
       <!-- Left Footer Content -->
-      <td style="width: 20%; color:#f5f3e5;">
+      <td style="width: 20%; color:#f5f3e5" align="left">
         <p>&copy; 2025 | Design by Buttercup Café. All rights reserved</p>
         <p><a href="mailto:nurdiyanahnabila@gmail.com">Email me</a></p>
       </td>
@@ -176,46 +185,83 @@
       localStorage.setItem("audioPlaying", "false");
     }
   }
-</script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
     const stars = document.querySelectorAll("#star-rating .fa-star");
+    let ratingValue = 0;
 
     // Highlight stars based on hover
     stars.forEach((star, index) => {
-      star.addEventListener("mouseover", () => {
-        resetStars();
-        for (let i = 0; i <= index; i++) {
-          stars[i].classList.add("active");
-        }
-      });
+        star.addEventListener("mouseover", () => {
+            resetStars();
+            for (let i = 0; i <= index; i++) {
+                stars[i].classList.add("active");
+            }
+        });
 
-      star.addEventListener("mouseout", resetStars);
+        star.addEventListener("mouseout", resetStars);
 
-      // Set the rating on click
-      star.addEventListener("click", () => {
-        resetStars();
-        for (let i = 0; i <= index; i++) {
-          stars[i].classList.add("selected");
-        }
-        alert(`You selected ${index + 1} stars!`);
-      });
+        // Set the rating on click
+        star.addEventListener("click", () => {
+            resetStars();
+            for (let i = 0; i <= index; i++) {
+                stars[i].classList.add("selected");
+            }
+            ratingValue = index + 1;
+        });
     });
 
     // Reset stars to show the selected state
     function resetStars() {
-      stars.forEach((star) => {
-        star.classList.remove("active");
-        star.classList.remove("selected");
-      });
-      const selectedStars = document.querySelectorAll("#star-rating .fa-star.selected");
-      selectedStars.forEach((star) => {
-        star.classList.add("active");
-      });
+        stars.forEach((star) => {
+            star.classList.remove("active");
+            star.classList.remove("selected");
+        });
+        const selectedStars = document.querySelectorAll("#star-rating .fa-star.selected");
+        selectedStars.forEach((star) => {
+            star.classList.add("active");
+        });
     }
-  });
-</script>
+
+    // Handle form submission
+    document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent form from submitting
+
+        // Get the form values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const comment = document.getElementById("comment").value;
+
+        if (name && email && comment && ratingValue > 0) {
+            // Insert feedback into the table at the top
+            const feedbackTable = document.getElementById("feedbackTable").getElementsByTagName("tbody")[0];
+            const newRow = feedbackTable.insertRow(0); // Insert row at the top
+
+            // Insert feedback content and style the new row with the same background and text color
+            newRow.innerHTML = `
+            <td style="padding: 10px;">${name}</td>
+            <td style="padding: 10px;">${comment}</td>
+            <td style="padding: 10px;">${'★'.repeat(ratingValue)}${'☆'.repeat(5 - ratingValue)}</td>
+            `;
+            
+            // Apply the background color and text color to the new row
+            newRow.style.backgroundColor = '#321414'; // Same as existing feedback rows
+            newRow.style.color = '#f5f3e5'; // Same as existing feedback rows
+
+            // Clear form fields
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("comment").value = "";
+            resetStars(); // Reset rating stars
+        } else {
+            alert("Please fill out all fields and select a rating.");
+        }
+    });
+});
+
+    </script>
 
 </body>
+
 </html>
