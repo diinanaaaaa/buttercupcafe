@@ -168,7 +168,7 @@
       document.getElementById("playButton").textContent = "Pause Music";
     }
   };
-
+  
   // Toggle audio play/pause and save state to localStorage
   function toggleAudio() {
     var audio = document.getElementById("backgroundAudio");
@@ -184,9 +184,10 @@
       localStorage.setItem("audioPlaying", "false");
     }
   }
+</script>  
 
-    <script>
-       document.addEventListener("DOMContentLoaded", function () {
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
     const stars = document.querySelectorAll("#star-rating .fa-star");
     let ratingValue = 0;
 
@@ -258,8 +259,8 @@
         }
     });
 });
+</script>  
 
-    </script>
 
 </body>
 
