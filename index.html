@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttercup Café</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.jpg" type="image/jpg" sizes="16x16"> <!-- Favicon -->
+  <link rel="stylesheet" href="hover.css" type="text/css"> <!-- Hover Effects CSS -->
+</head>
+
+<body>
+
+  <table>
+    <tr>
+      <!-- Header -->
+      <td colspan="3" class="header">
+        <h1>Buttercup Café<span>.</span></h1>
+        <p>Your Daily Pitstop</p>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- Navigation -->
+      <td colspan="3" class="nav">
+        <div class="nav-container">
+          <!-- Logo with Home Link -->
+          <a href="index.html" class="nav-logo-link">
+            <img src="logo-2.jpg" width="50" height="50" alt="logo" class="nav-logo">
+          </a>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="feedbacks.html">Feedbacks</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- Body -->
+      <td colspan="3" class="body">
+        <h2>Start Your Day With Fresh Coffee</h2>
+        <p>Amazing coffee that gives you the energy to start your day with a smile!</p>
+      </td>
+    </tr>
+
+  </table>
+
+	<table class="w3-content w3-display-container" style="width:100%; height:100%; table-layout: fixed; margin: 30px auto 0;">
+  <tr>
+    <td colspan="3" align="center">
+      <!-- Images in a single row, each image will span the full width of the table -->
+      <img class="mySlides" src="banner.png" style="width:70%">
+      <img class="mySlides" src="banner2.png" style="width:70%">
+      <img class="mySlides" src="banner3.png" style="width:70%">
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: left; width: 50%;">
+      <!-- Left navigation button -->
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    </td>
+    <td style="text-align: center; width: 50%;"> 
+      <!-- Optional center content (currently empty) -->
+    </td>
+    <td style="text-align: right; width: 50%;">
+      <!-- Right navigation button -->
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </td>
+  </tr>
+  
+  <tr>
+      <!-- Body -->
+      <td colspan="3" class="w3-content w3-display-container" align="center">
+		<button class="order-button" style="
+		  margin: 60px auto 0; 
+		  padding: 15px 30px; 
+		  font-size: 18px; 
+		  background: linear-gradient(90deg, #FFD700, #FFC300); 
+		  color: #321414; 
+		  border: none; 
+		  border-radius: 10px; 
+		  cursor: pointer; 
+		  text-transform: uppercase; 
+		  font-weight: bold; 
+		  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+		  position: relative; 
+		  overflow: hidden; 
+		  transition: background 0.4s ease-in-out;">
+		  <a href="order.html" style="
+			text-decoration: none; 
+			color: inherit; 
+			display: inline-block; 
+			width: 100%; 
+			height: 100%;">Order Now</a>
+		</button>
+		<p style="margin: 100px auto 0;"><img src="bee.png" class="sticker" align="center"><img src="vid.gif" alt="coffee" style="width:55%" align="center">  <img src="bee.png" class="sticker" align="center"></p>
+      </td>
+    </tr>
+</table>
+
+
+	 <!-- Back to Top Link -->
+	<tr>
+		<td colspan="3" class="body">
+			<p align="center">
+				<a href="#top" class="jump-to-top">Back to Top</a>
+			</p>
+		</td>
+	</tr>
+
+</table>
+
+<!-- Footer Section -->
+<footer>
+  <table style="margin: 30px auto 0;">
+    <tr>
+      <!-- Left Footer Content -->
+      <td style="width: 20%; color:#f5f3e5;">
+        <p>&copy; 2025 | Design by Buttercup Café. All rights reserved</p>
+        <p><a href="mailto:nurdiyanahnabila@gmail.com">Email me</a></p>
+      </td>
+
+      <!-- Social Media Links -->
+      <td style="width: 20%; text-align: right;">
+        <a href="https://www.instagram.com/buttercup.cafeofficial?igsh=bWlqcmNtY2ZqMThw" target="_blank">
+          <img src="insta.jpeg" alt="Instagram" width="50" height="50" >
+        </a>
+      </td>
+    </tr>
+  </table>
+</footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+
+</html>
