@@ -143,6 +143,41 @@
     </tr>
   </table>
 </footer>
+<figure class="audio-player-container">
+  <figcaption>Lullaby</figcaption>
+  <audio id="backgroundAudio" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button onclick="toggleAudio()" id="playButton">Play Music</button>
+</figure>
+
+<script>
+  // Check localStorage to see if the audio should play
+  window.onload = function() {
+    if (localStorage.getItem("audioPlaying") === "true") {
+      document.getElementById("backgroundAudio").play();
+      document.getElementById("playButton").textContent = "Pause Music";
+    }
+  };
+
+  // Toggle audio play/pause and save state to localStorage
+  function toggleAudio() {
+    var audio = document.getElementById("backgroundAudio");
+    var playButton = document.getElementById("playButton");
+
+    if (audio.paused) {
+      audio.play();
+      playButton.textContent = "Pause Music";
+      localStorage.setItem("audioPlaying", "true");
+    } else {
+      audio.pause();
+      playButton.textContent = "Play Music";
+      localStorage.setItem("audioPlaying", "false");
+    }
+  }
+</script>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const stars = document.querySelectorAll("#star-rating .fa-star");
