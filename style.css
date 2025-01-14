@@ -117,6 +117,7 @@ body {
   font-size: 1.2em; /* Smaller font size */
   font-weight: lighter;
 }
+
 /*unordered list about us*/
 ul{
     text-align: center;
@@ -306,6 +307,7 @@ li{
   background-color: #3e2b1f; /* Dark chocolate on click */
   transform: translateY(1px);
 }
+
 
 /* Style for the audio player container */
 .audio-player-container {
