@@ -307,6 +307,44 @@ li{
   transform: translateY(1px);
 }
 
+/* Style for the audio player container */
+.audio-player-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the figcaption */
+.audio-player-container figcaption {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Style for the audio player */
+.audio-player-container audio {
+  width: 250px;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Style for the button */
+.audio-player-container button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #53452e;
+  color: #f5f3e5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* Footer Section Styles */
 footer {
   background-color: #3d2b1f; /* Dark chocolate footer */
