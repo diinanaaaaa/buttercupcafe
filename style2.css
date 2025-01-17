@@ -14,6 +14,13 @@ body {
   flex-direction: column; /* Helps content fill the page vertically */
 }
 
+ol {
+    list-style: decimal; /* Ensure numbers are shown */
+    padding: 0;
+    color: #888;
+}
+
+
 /* Header Section Styles */
 .header {
   background-color: #3d2b1f; /* Dark chocolate for header */
