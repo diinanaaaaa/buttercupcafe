@@ -15,10 +15,11 @@ body {
 }
 
 ol {
-    list-style: decimal; /* Ensure numbers are shown */
-    padding: 0;
-    color: #888;
+  list-style: decimal; /* Ensures numbers are shown */
+  padding-left: 20px; /* Ensures there's proper indentation */
+  color: #888; /* Optional: Keeps text color */
 }
+
 
 
 /* Header Section Styles */
