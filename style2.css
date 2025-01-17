@@ -17,7 +17,7 @@ body {
 ol {
   list-style: decimal; /* Ensures numbers are shown */
   padding-left: 20px; /* Ensures there's proper indentation */
-  color: #888; /* Optional: Keeps text color */
+  color: #fff; /* Optional: Keeps text color */
 }
 
 
